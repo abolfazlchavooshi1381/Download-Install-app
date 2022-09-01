@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         val dirPath = getExternalFilesDir(null)!!.path
         directoryPath = dirPath + File.separator + "downloads"
-        filePath = directoryPath + File.separator + "TianaX_10001_3_0_0_3.apk"
+        filePath = directoryPath + File.separator + "TianaX_10001_3_0_0_5.apk"
 
         file = File(directoryPath)
         if (!file!!.exists()) {
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                         19742,
                         "FTPUser",
                         "Ki@nN@k6468681737",
-                        "TianaX_10001_3_0_0_3.apk", file!!
+                        "TianaX_10001_3_0_0_5.apk", file!!
                     )
                 )
             } catch (e: Exception) {
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         return try {
             Looper.prepare()
             Handler(Looper.getMainLooper()).postDelayed({
-                textView.text = "connecting"
+                textView.text = "Connecting"
                 progressBar.visibility = View.VISIBLE
                 textView.visibility = View.VISIBLE
             }, 0)
