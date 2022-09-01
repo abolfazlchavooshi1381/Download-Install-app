@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="external"
+        path="." />
+    <external-files-path
+        name="external_files"
+        path="." />
+    <files-path
+        name="TianaX_10001_3_0_0_3"
+        path="./downloads/TianaX_10001_3_0_0_3.apk" />
+</paths>
