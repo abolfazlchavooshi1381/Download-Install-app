@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         val dirPath = getExternalFilesDir(null)!!.path
         directoryPath = dirPath + File.separator + "downloads"
-        filePath = directoryPath + File.separator + "TianaX_10001_3_0_0_5.apk"
+        filePath = directoryPath + File.separator + "app.apk"
 
         file = File(directoryPath)
         if (!file!!.exists()) {
@@ -51,11 +51,11 @@ class MainActivity : AppCompatActivity() {
             try {
                 intent.putExtra(
                     EXTRA_KEY_DATA, downloadAndSaveFile(
-                        "89.39.208.46",
-                        19742,
+                        "X.X.X.X",
+                        XX,
                         "FTPUser",
-                        "Ki@nN@k6468681737",
-                        "TianaX_10001_3_0_0_5.apk", file!!
+                        "XXXXXXXXXXXXXXXXXXX",
+                        "app.apk", file!!
                     )
                 )
             } catch (e: Exception) {
